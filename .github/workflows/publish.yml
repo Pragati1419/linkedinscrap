@@ -1,0 +1,10 @@
+name : "linkedInsight"
+
+on:push
+
+jobs :
+   publish:
+      registry-url :https://www.registry.npmjs.org
+      
+      env:
+      NODE_AUTH_TOKEN:${{secrets.NPM_AUTH_TOKEN}}
